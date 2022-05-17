@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+<div>
+    coure <input type="text" ng-model="coure" placeholder="ener coures">
+    <p>hello</p>
+    <p>welcome to {{coure}}</p>
+</div>
+<script >
+    var app=angular.module('myApp',[]);
+    app.controller('myController',function ($scope) {
+        $scope.coure="angularjs"
+    })
+</script>
+
+</body>
+</html>
